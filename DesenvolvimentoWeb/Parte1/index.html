@@ -13,7 +13,10 @@
         <!--Responsável por receber configurações da página-->
         <title>Casa Criativa</title>
         <meta charset="UTF-8">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -41,14 +44,14 @@
                 </main>
 
                 <section id="buttons">
-                    <button>+ Adicionar Ideia</button>
+                    <button onclick="onOff()">+ Adicionar Ideia</button>
                     <button class="fat">Ver ideais</button>
                 </section>
 
 
-                <p id="footer">
+                <footer class="hide">
                     Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a>
-                </p>
+                </footer>
         
                 <!--OBRIGADO IFOOD E ROCKETSEAT!-->
 
@@ -65,8 +68,8 @@
                         <p>Estudo</p>
                         <div class="description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
-                            <a href="#">Ir para a Ideia</a>
                         </div>
+                        <a href="#">Ir para a Ideia</a>
                     </div>
                 </div>
 
@@ -80,8 +83,8 @@
                         <p>Saúde</p>
                         <div class="description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
-                            <a href="#">Ir para a Ideia</a>
                         </div>
+                        <a href="#">Ir para a Ideia</a>
                     </div>
                 </div>
 
@@ -95,17 +98,63 @@
                         <p>Relaxamento</p>
                         <div class="description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
-                            <a href="#">Ir para a Ideia</a>
                         </div>
+                        <a href="#">Ir para a Ideia</a>
                     </div>
                 </div>
             </section>
 
         </div>
+        <!--Images, copyright to: https://www.flaticon.com/packs/stay-at-home-98?word=stay%20at%20home  LAST ACESS 08/07/2022-->
 
-        
+
+        <!-- Modal -->
+        <div id="modal" class="hide">
+            <div id="content">
+                <h1>Nova Ideia</h1>
+                <form action="">
+                
+                    <div class="input-wrapper">
+                        <label for="title">Título da ideia</label>
+                        <input type="text" name="title">
+                    </div>
+
+                    
+                    <div class="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+
+                    
+                    <div class="input-wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image">
+                    </div>
+
+                    
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descrição da ideia</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="link">Link da ideia</label>
+                        <input type="url" name="link">
+                    </div>
+
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+                
+                
+                
+                </form>
+
+
+            </div>
+        </div>
+
         <script src="scripts.js"></script>
         
-<!--Images, copyright to: https://www.flaticon.com/packs/stay-at-home-98?word=stay%20at%20home  LAST ACESS 08/07/2022-->
+    
     </body>
 </html>
