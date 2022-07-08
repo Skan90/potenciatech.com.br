@@ -13,83 +13,99 @@
         <!--Responsável por receber configurações da página-->
         <title>Casa Criativa</title>
         <meta charset="UTF-8">
-        <style>
-
-            /*CSS Cascading Style Sheet
-            
-            */
-            body{
-                background-color: #e5e5e5;
-                color: 25282B;
-                text-align: center;
-            }
-
-            button {
-
-                color: #ff5e84;
-                border: none;
-                font-weight: bold;
-                background: none;
-            }
-
-            button.fat{
-                color: white;
-                background: #ff5e84;
-            }
-
-            #footer{
-                text-align: center;
-            }
-            #footer a{
-                color: #25282B;
-                text-decoration: none;
-            }
-
-            .hide{
-
-                display: none;
-            }
-        </style>
+        
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Casa Criativa</h1>
-        
-        <img src="logo.png" alt="Imagem da Logomarca">
 
-        <p>
-            Ficar em casa em períodos longos, não deve ser nada fácil.
-        </p>
+        <div id="container">
 
-        <p>
-            Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
-        </p>
+            <section id="intro">
 
-        <p>
-            Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
-        </p>
+                <header>       
+                <img src="logo.png" alt="Imagem da Logomarca">
+                </header>
 
-        <button>+ Adicionar Ideia</button>
-        <button class="fat">Ver ideais</button>
-
-        <p id="footer">
-            Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a>
-        </p>
-
-        <!--OBRIGADO IFOOD E ROCKETSEAT!-->
-        
-        <script>
+                <main>
+                    <p>
+                        Ficar em casa em períodos longos, não deve ser nada fácil.
+                    </p>
             
-            document
-                .querySelector("button.fat")
-                .addEventListener("click", function(){
-                    document.querySelector("#footer")
-                    .classList
-                    .toggle("hide")
-                })
+                    <p>
+                        Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+                    </p>
+            
+                    <p>
+                        Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
+                    </p>
+                </main>
+
+                <section id="buttons">
+                    <button>+ Adicionar Ideia</button>
+                    <button class="fat">Ver ideais</button>
+                </section>
 
 
-        </script>
+                <p id="footer">
+                    Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a>
+                </p>
         
+                <!--OBRIGADO IFOOD E ROCKETSEAT!-->
 
+            </section>
+
+            <section id="lastideas">
+                <div class="idea">
+                    <img
+                        src="programacao.png" 
+                        alt="Imagem de Curso de Programação">
+
+                    <div class="content">
+                        <h3>Cursos de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
+                            <a href="#">Ir para a Ideia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img
+                        src="exercicios.png"
+                        alt="Imagem de Exercícios">
+
+                    <div class="content">
+                        <h3>Exercícios</h3>
+                        <p>Saúde</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
+                            <a href="#">Ir para a Ideia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img
+                        src="Jardinagem.png"
+                        alt="Imagem de Jardiangem">
+
+                    <div class="content">
+                        <h3>Jardinagem</h3>
+                        <p>Relaxamento</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reprehenderit beatae aliquam laboriosam unde maiores voluptatem nihil ab libero fugiat ad blanditiis minus debitis, enim maxime soluta corrupti non atque!
+                            <a href="#">Ir para a Ideia</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        
+        <script src="scripts.js"></script>
+        
+<!--Images, copyright to: https://www.flaticon.com/packs/stay-at-home-98?word=stay%20at%20home  LAST ACESS 08/07/2022-->
     </body>
 </html>

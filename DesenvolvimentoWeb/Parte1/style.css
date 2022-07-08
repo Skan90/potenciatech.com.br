@@ -1,0 +1,49 @@
+
+/*
+ BOX
+
+    Conteúdo da Caixa
+    Largura
+    Espaçamentos
+    Preenchimentos
+    Bordas
+    Posicionamentos
+*/
+
+body{
+    background-color: #e5e5e5;
+    color: 25282B;
+    text-align: center;
+}
+
+#container {
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button {
+
+    color: #ff5e84;
+    border: none;
+    font-weight: bold;
+    background: none;
+}
+
+button.fat{
+    color: white;
+    background: #ff5e84;
+}
+
+#footer{
+    text-align: center;
+}
+#footer a{
+    color: #25282B;
+    text-decoration: none;
+}
+
+.hide{
+
+    display: none;
+}
